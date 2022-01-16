@@ -12,6 +12,13 @@
 #
 class User < ApplicationRecord
     validates :username, presence: true, uniqueness: true
+    validate :check_username_length
     validates :email, presence: true, uniqueness: true, format: { with: URI::MailTo::EMAIL_REGEXP }
+
+    def check_username_length
+        unless self.username.length >=4
+            errors[:username] << "is too short, must be longer than 4 characters"
+        end
+    end
 
 end
