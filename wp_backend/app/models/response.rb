@@ -15,6 +15,16 @@ class Response < ApplicationRecord
     validates :prompt_id, presence: true
     validates :author_id, presence: true
 
+    belongs_to :user,
+        primary_key: :id,
+        foreign_key: :author_id,
+        class_name: :User
+
+    belongs_to :prompt,
+        primary_key: :id,
+        foreign_key: :prompt_id,
+        class_name: :Prompt
+
     def check_response_length
         if self.body.length < 5
             errors[:body] << "response is too short, must be longer than 5 characters"

@@ -10,4 +10,9 @@
 class Prompt < ApplicationRecord
     validates :title, presence: true
 
+    has_many :responses,
+        primary_key: :id,
+        foreign_key: :prompt_id,
+        class_name: :Response
+        
 end
