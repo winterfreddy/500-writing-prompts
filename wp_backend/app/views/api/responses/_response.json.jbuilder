@@ -1,0 +1,1 @@
+json.extract! response, :id, :body, :prompt_id, :author_id
