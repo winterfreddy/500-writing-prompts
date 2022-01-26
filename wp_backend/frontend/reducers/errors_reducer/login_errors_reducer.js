@@ -1,4 +1,4 @@
-import { RECEIVE_LOGIN_ERRORS } from "../actions/session_actions";
+import { RECEIVE_LOGIN_ERRORS } from "../../actions/session_actions";
 
 const loginErrorsReducer = (state = [], action) => {
     Object.freeze(state);

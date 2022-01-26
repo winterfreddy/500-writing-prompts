@@ -1,4 +1,4 @@
-import { RECEIVE_PROMPTS, RECEIVE_PROMPT, REMOVE_PROMPT } from '../actions/prompt_actions';
+import { RECEIVE_PROMPTS, RECEIVE_PROMPT, REMOVE_PROMPT } from '../../actions/prompt_actions';
 
 const promptsReducer = (state = {}, action) => {
     Object.freeze(state);

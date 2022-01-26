@@ -1,4 +1,4 @@
-import { RECEIVE_RESPONSES, RECEIVE_RESPONSE, REMOVE_RESPONSE } from '../actions/response_actions';
+import { RECEIVE_RESPONSES, RECEIVE_RESPONSE, REMOVE_RESPONSE } from '../../actions/response_actions';
 
 const responsesReducer = (state = {}, action) => {
     Object.freeze(state);

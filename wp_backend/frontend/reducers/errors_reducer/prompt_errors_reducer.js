@@ -1,4 +1,4 @@
-import { RECEIVE_PROMPT_ERRORS } from '../actions/prompt_actions';
+import { RECEIVE_PROMPT_ERRORS } from '../../actions/prompt_actions';
 
 const promptErrorsReducer = (state = [], action) => {
     Object.freeze(state);

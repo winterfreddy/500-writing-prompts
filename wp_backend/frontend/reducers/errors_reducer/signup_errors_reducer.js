@@ -1,4 +1,4 @@
-import { RECEIVE_SIGNUP_ERRORS } from "../actions/session_actions";
+import { RECEIVE_SIGNUP_ERRORS } from "../../actions/session_actions";
 
 const signupErrorsReducer = (state = [], action) => {
     Object.freeze(state);
