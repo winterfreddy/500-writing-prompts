@@ -16,7 +16,12 @@ const App = () => (
         
         <Route exact path="/" render={() => 
             <div>
-                You made it!
+                <label>500+ Writing Prompts</label>
+                <div>
+                    <label>Pick a prompt</label>
+                    <label>Write a response</label>
+                    <label>Share with the world</label>
+                </div>
             </div>
         }/>
     </div>
