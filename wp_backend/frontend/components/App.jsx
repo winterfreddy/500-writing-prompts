@@ -4,6 +4,7 @@ import { Route, Link } from 'react-router-dom';
 import LoginFormContainer from "./session_form/login_form_container";
 import SignupFormContainer from "./session_form/signup_form_container";
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
+import SplashPage from "./splash";
 
 const App = () => (
     <div>
@@ -14,16 +15,7 @@ const App = () => (
         <AuthRoute path="/login" component={LoginFormContainer} />
         <AuthRoute path="/signup" component={SignupFormContainer} />
         
-        <Route exact path="/" render={() => 
-            <div>
-                <label>500+ Writing Prompts</label>
-                <div>
-                    <label>Pick a prompt</label>
-                    <label>Write a response</label>
-                    <label>Share with the world</label>
-                </div>
-            </div>
-        }/>
+        <Route exact path="/" component={SplashPage}/>
     </div>
 );
 

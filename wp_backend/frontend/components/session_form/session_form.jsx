@@ -57,7 +57,7 @@ const SessionForm = (props) => {
         }
     }
 
-    console.log(props, state);
+    // console.log(props, state);
     return (
         <div className="login-form-container">
             {renderRedirectButton()}
