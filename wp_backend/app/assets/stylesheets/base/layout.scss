@@ -1,0 +1,17 @@
+.splashpage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.splashpage-subcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.splashpage-subtext {
+    display: flex;
+    flex-direction: column;
+}
