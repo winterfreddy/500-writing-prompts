@@ -5,7 +5,7 @@ const SplashPage = () => {
         <div className="splashpage-container">
             <label className="splashpage-title">500+ Writing Prompts</label>
             <div className="splashpage-subcontainer">
-                <img src="images/undraw_Diary_re_4jpc.png" alt="woman standing to a life-sized diary page"/>
+                <img className="splashpage-image" src="images/undraw_Diary_re_4jpc.png" alt="woman standing to a life-sized diary page"/>
                 <div className="splashpage-subtext">
                     <label>Pick a prompt</label>
                     <label>Write a response</label>
