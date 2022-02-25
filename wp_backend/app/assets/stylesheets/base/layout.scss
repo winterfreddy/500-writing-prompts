@@ -9,6 +9,11 @@
     min-width: 100vw;
 }
 
+.splashpage-title {
+    font-family: 'Praise', cursive;
+    font-size: 8vw;
+}
+
 .splashpage-subcontainer {
     font-family: 'Roboto Serif', sans-serif;
     display: flex;
@@ -28,4 +33,12 @@
 .splashpage-subtext {
     display: flex;
     flex-direction: column;
+}
+
+.splashpage-subtext-label {
+    padding: 10px 0;
+}
+
+.splashpage-subtext-label > label {
+    font-size: 3vw;
 }
