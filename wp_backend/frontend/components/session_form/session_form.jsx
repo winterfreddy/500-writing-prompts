@@ -18,22 +18,29 @@ const SessionForm = (props) => {
         if(props.formType === 'signup') {
             return (
                 <div>
-                    <input type="text"
-                        className="login-input"
-                        value={state.username}
-                        placeholder="Username"
-                        onChange={handleChange('username')} />
-                    <input type="text"
-                        className="login-input"
-                        value={state.email}
-                        placeholder="Email"
-                        onChange={handleChange('email')} />
+                    <div className='login-form-sub-box'>
+                        <label>Username</label>
+                        <input type="text"
+                            className="login-input"
+                            value={state.username}
+                            placeholder="Username"
+                            onChange={handleChange('username')} />
+                    </div>
+                    <div className='login-form-sub-box'>
+                        <label>Email Address</label>
+                        <input type="text"
+                            className="login-input"
+                            value={state.email}
+                            placeholder="Email"
+                            onChange={handleChange('email')} />
+                    </div>
                 </div>
             );
         }
         else {
             return (
-                <div>
+                <div className='login-form-sub-box'>
+                    <label>Email Address</label>
                     <input type="text"
                         className="login-input"
                         value={state.email}
@@ -57,22 +64,25 @@ const SessionForm = (props) => {
         }
     }
 
-    // console.log(props, state);
     return (
         <div className="login-form-container">
-            {renderRedirectButton()}
+            <img className="login-form-image" src="images/undraw_Authentication.png" alt="woman standing with a phone authenticating her credentials"/>
             <form onSubmit={handleSubmit} className="login-form-box">
-                <label className="title">500wp</label>
+                <label className="login-title">500+ Writing Prompts</label>
                 <div className="login-form">
                     {renderUserEmail()}
-                    <input type="password"
-                        className="login-input"
-                        value={state.password}
-                        placeholder="Password"
-                        onChange={handleChange('password')} />
+                    <div className='login-form-sub-box'>
+                        <label>Password</label>
+                        <input type="password"
+                            className="login-input"
+                            value={state.password}
+                            placeholder="Password"
+                            onChange={handleChange('password')} />
+                    </div>
                     <button className="session-submit" type="submit" value={props.formType} >{props.formType}</button>
                 </div>
             </form>
+            {/* {renderRedirectButton()} */}
         </div>
     )
 }
